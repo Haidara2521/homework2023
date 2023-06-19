@@ -1,6 +1,4 @@
 import json
-from pprint import pprint
-print ("x=4","y=5","z=6")
 s=0
 haidara = {}
 L1 = []
@@ -19,9 +17,9 @@ with open("haidara.json","r") as f:
             s=s-1
 
     haidara ={name1:L1}
-    print(ali)
+    print(haidara)
 
     print("final score is :",s)
 haidara1=json.dumps(haidara)
-with open("ali.json","w")as f:
+with open("haidara.json","w")as f:
     f.write(haidara1)
